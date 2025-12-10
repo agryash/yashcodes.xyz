@@ -116,16 +116,16 @@ export default function HomePage() {
   return (
     <div className="lg:grid grid-cols-[320px_1fr] bg-gray4 md:border-x border-gray8 relative">
       <aside className="p-6 pt-12 lg:p-10 border-gray8 top-0 flex flex-col gap-6 relative bg-gray4 border-b lg:border-b-0 lg:border-r-0 lg:sticky lg:h-screen">
-        <h1 className="font-serif text-[64px] leading-[1]">Not a Number</h1>
+        <h1 className="font-serif text-[64px] leading-[1]">Yash Agrawal</h1>
         <div className="md:flex lg:block lg:space-y-8 space-y-6 md:space-y-0 items-center justify-between">
           <p className="leading-relaxed">
             <Balancer>
               Interactive blog posts on computer science and web development by{" "}
               <a
                 className="underline underline-offset-2"
-                href="https://twitter.com/nandafyi"
+                href="https://x.com/imyagrawal"
               >
-                Nanda Syahrasyad.
+                Yash Agrawal.
               </a>
             </Balancer>
           </p>
@@ -134,14 +134,14 @@ export default function HomePage() {
         <footer className="mt-auto flex justify-between items-end text-gray11">
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com/nandanmen"
+              href="https://github.com/agryash"
               target="_blank"
               rel="noreferrer"
             >
               <FaGithub />
             </a>
             <a
-              href="https://twitter.com/nandafyi"
+              href="https://x.com/imyagrawal"
               target="_blank"
               rel="noreferrer"
             >
@@ -154,59 +154,6 @@ export default function HomePage() {
         </footer>
       </aside>
       <div className="bg-gray4 lg:border-l border-gray8">
-        <div className="p-6 lg:p-10 border-b border-gray7 border-dashed">
-          <a
-            className="flex gap-4 p-4 pr-0 bg-gray3 border border-gray8 border-dashed relative items-center hover:bg-gray2"
-            href="https://svg-animations.how"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className="flex flex-col lg:flex-row lg:gap-4 lg:items-center gap-1">
-              <span className="font-medium">Interactive SVG Animations</span>
-              <span className="text-sm">
-                An interactive course on making whimsical SVGs and SVG
-                animations.
-              </span>
-            </span>
-            <svg
-              className="ml-auto shrink-0"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                d="M13.75 6.75L19.25 12L13.75 17.25"
-              />
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                d="M19 12H4.75"
-              />
-            </svg>
-            <span className="text-gray9">
-              <span className="absolute -top-2 -right-2">
-                <XIcon />
-              </span>
-              <span className="absolute -top-2 -left-2">
-                <XIcon />
-              </span>
-              <span className="absolute -bottom-2 -right-2">
-                <XIcon />
-              </span>
-              <span className="absolute -bottom-2 -left-2">
-                <XIcon />
-              </span>
-            </span>
-          </a>
-        </div>
         <ul className="divide-y divide-gray7 divide-dashed">
           {posts.map((post) => (
             <Post post={post} key={post.slug} />

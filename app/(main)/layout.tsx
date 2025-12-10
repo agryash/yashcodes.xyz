@@ -6,9 +6,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Not a Number",
+  title: "Yash Agrawal",
   description:
-    "An interactive blog on computer science and web development, by Nanda Syahrasyad.",
+    "An interactive blog on computer science and web development, by Yash Agrawal.",
   authors: [
     {
       name: "Nanda Syahrasyad",
